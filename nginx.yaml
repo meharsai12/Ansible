@@ -26,8 +26,8 @@
       state: present
 
 
-  - name: start python3
-    ansible.builtin.service:
-      name: python3
-      state: started
-      enabled: yes
+  # - name: start python3
+  #   ansible.builtin.service:
+  #     name: python3
+  #     state: started
+  #     enabled: yes
