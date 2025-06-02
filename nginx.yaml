@@ -14,3 +14,20 @@
       name: nginx
       state: started 
       enabled: yes
+
+
+- name: install python3
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install python3 and run
+    ansible.bu.package:
+      name: python3
+      state: present
+
+
+  - name: start python3
+    ansible.builtin.service:
+      name: python3
+      state: started
+      enabled: yes
