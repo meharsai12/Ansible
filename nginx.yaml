@@ -21,7 +21,7 @@
   become: yes
   tasks:
   - name: install python3 and run
-    ansible.bu.package:
+    ansible.builtin.package:
       name: python3
       state: present
 
