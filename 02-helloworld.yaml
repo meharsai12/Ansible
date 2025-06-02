@@ -5,3 +5,13 @@
   - name: print helloworld
     ansible.builtin.debug:
       msg: "i am printing helloworld"
+
+
+
+  - name: print hello i am mehar
+    hosts: local
+    connection: local
+    tasks:
+    - name: i want to print i am mehar
+      ansible.builtin.debug:
+        msg: "this is my second code to print that i am mehar"
