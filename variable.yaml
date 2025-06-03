@@ -10,3 +10,10 @@
   - name: Printing course details
     ansible.builtin.debug:
       msg: "Trainer is: {{ TRAINER }}, course is: {{COURSE}}, Duration is: {{DURATION}} "
+
+  - name: printing devops other course
+    vars:
+      TRAINER: Saiteja
+    ansible.builtin.debug:
+      msg: "Trainer is: {{ TRAINER }}, course is: {{COURSE}}, Duration is: {{DURATION}} "
+   
