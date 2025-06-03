@@ -17,7 +17,5 @@
   tasks:
   - name: Dataypes in ansible
     ansible.builtin.debug:
-      msg: " The course is: {{COURSE} Trainer is {{TRAINER}}  the Duration is {{DURATION}} is it live {{IS_LIVE}}
-               the tools covered were {{TOOLS}}
-               and the concepts were{{CONCEPTS}}"
+      msg: " The course is: {{COURSE} Trainer is {{TRAINER}}  the Duration is {{DURATION}} is it live {{IS_LIVE}} the tools covered were {{TOOLS}} and the concepts were{{CONCEPTS}}"
   
