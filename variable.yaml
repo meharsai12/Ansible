@@ -16,4 +16,17 @@
       TRAINER: Saiteja
     ansible.builtin.debug:
       msg: "Trainer is: {{ TRAINER }}, course is: {{COURSE}}, Duration is: {{DURATION}} "
+
+- name: printing java course details
+  host: local
+  connection: local
+  vars:
+    trainer: mehar
+    teaching mode: online
+    time: daily 1 hour
+
+  tasks:
+  - name: java course details
+    ansible.builtin.debug:
+      msg: "trainer is {{trainer}}, time is {{time}} ,teachingmode is {{teachingmode}}"
    
