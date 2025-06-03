@@ -31,4 +31,12 @@
   - name: java course details
     ansible.builtin.debug:
       msg: "trainer is {{trainer}}, time is {{time}} ,teachingmode is {{teachingmode}}"
+
+
+  - name:
+    vars:
+      person: meharsai
+      person2: Saiteja
+    ansible.builtin.debug:
+     msg: "{{person}} is {{persion2}} friends, {{person2}} is brother for {{person}}"
    
