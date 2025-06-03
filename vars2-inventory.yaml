@@ -1,5 +1,5 @@
 - name: calling variables from inventory
-  hosts: fronten
+  hosts: frontend
   vars_prompt:
   - name: USERNAME
     prompt: Enter your username
