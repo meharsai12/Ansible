@@ -23,3 +23,4 @@
 #3= the files variable is executed
 #4= prompt will be executed
 #5= The playbook means the gobal one or the variable whole code at starting is executed after prompt
+#6= at last inventory variable is executed

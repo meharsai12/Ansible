@@ -1,0 +1,23 @@
+- name: Datatypes
+  hosts: local
+  connection: local
+  vars:
+    COURSE: Devsecops with aws
+    DURATION: 12hr
+    TRAINER: Meharsai
+    IS_LIVE: true
+    TOOLS:  # the output will be i [] because it is in list
+    - ci/code
+    - ansible
+    - shell scripting
+    - linux
+    CONCEPTS:  #the output will be {} flower brackets because it is object key value pair 
+      CI/CD: jenkins
+      scripting LAnguage: shell ,linux,ansible, terraform
+    tasks:
+    - name: Dataypes in ansible
+      ansible.builtin.debug:
+        msg: " The course is: {{COURSE} Trainer is {{TRAINER}}  the Duration is {{DURATION}} is it live {{IS_LIVE}}
+               the tools covered were {{TOOLS}}
+               and the concepts were{{CONCEPTS}}"
+  
