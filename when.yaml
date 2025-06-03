@@ -9,7 +9,7 @@
   - name: The number is less than or equal to 100
     ansible.builtin.debug:
       msg: "{{THE NUMBER}} is less than or equal to 100"
-    when: THE NUMBER >= 100
+    when: THE NUMBER <= 100
 
   - name: The number is greater than 100
     ansible.builtin.debug:
