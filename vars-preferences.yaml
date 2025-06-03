@@ -5,10 +5,10 @@
     GREETING: Hello from playbook
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: GREETING
-    prompt: please enter the greeting
-    private: false
+  # vars_prompt:
+  # - name: GREETING
+  #   prompt: please enter the greeting
+  #   private: false
   tasks:
   - name: print the preference variable types
     # vars:
@@ -21,3 +21,4 @@
 #1= i have added something in commandline at lost the args will be executed 
 #2= the task level variable will be executed
 #3= the files variable is executed
+#4= prompt will be executed
