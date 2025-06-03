@@ -14,10 +14,10 @@
     CONCEPTS:  #the output will be {} flower brackets because it is object key value pair 
       CI/CD: jenkins
       scripting LAnguage: shell ,linux,ansible, terraform
-    tasks:
-    - name: Dataypes in ansible
-      ansible.builtin.debug:
-        msg: " The course is: {{COURSE} Trainer is {{TRAINER}}  the Duration is {{DURATION}} is it live {{IS_LIVE}}
+  tasks:
+  - name: Dataypes in ansible
+    ansible.builtin.debug:
+      msg: " The course is: {{COURSE} Trainer is {{TRAINER}}  the Duration is {{DURATION}} is it live {{IS_LIVE}}
                the tools covered were {{TOOLS}}
                and the concepts were{{CONCEPTS}}"
   
