@@ -1,0 +1,7 @@
+- name: PLAY1
+  hosts: local
+  connection: local
+  tasks:
+  - name: mutliplay
+    ansible.builtin.debug:
+      msg: "Task1 is pinging play1"
