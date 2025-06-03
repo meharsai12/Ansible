@@ -7,7 +7,7 @@
   - course.yaml
   vars_prompt:
   - name: GREETING
-    prompt: please enter the GREETING
+    prompt: please enter the greeting
     private: false
   tasks:
   - name: print the preference variable types
