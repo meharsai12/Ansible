@@ -1,8 +1,8 @@
 - name: variables preferences
   hosts: local
   connection: local
-  vars:
-    GREETING: Hello from playbook
+  # vars:
+  #   GREETING: Hello from playbook
   # vars_files:
   # - course.yaml
   # vars_prompt:
@@ -22,3 +22,4 @@
 #2= the task level variable will be executed
 #3= the files variable is executed
 #4= prompt will be executed
+#5= The playbook means the gobal one or the variable whole code at starting is executed after prompt
