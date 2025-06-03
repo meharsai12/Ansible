@@ -5,3 +5,20 @@
   - name: mutliplay
     ansible.builtin.debug:
       msg: "Task1 is pinging play1"
+
+  - name: task2 is pinging play1
+    ansible.builtin.debug:
+      msg: "Task2 is pinging play1"
+
+
+- name: PLAY2
+  hosts: local
+  connection: local
+  tasks:
+  - name: play2 is pinging task2
+    ansible.builtin.debug:
+      msg: "play2 is pinging task2"
+
+  - name: play2 is pinging Task1
+    ansible.builtin.debug:
+      msg: "play2 is pinging task1"
