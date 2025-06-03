@@ -1,5 +1,9 @@
 - name: calling variables from inventory
-  hosts: frontend
+  hosts: fronten
+  vars_prompt:
+  - name: USERNAME
+    prompt: Enter your username
+    private: true
   tasks:
   - name: course information
     ansible.builtin.debug:
