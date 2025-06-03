@@ -33,7 +33,7 @@
       msg: "trainer is {{trainer}}, time is {{time}} ,teachingmode is {{teachingmode}}"
 
 
-  - name:
+  - name: second play
     vars:
       person: meharsai
       person2: Saiteja
