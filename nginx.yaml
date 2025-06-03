@@ -5,25 +5,25 @@
   - name: installing nginx
     ansible.builtin.package:
       name: nginx
-      state: present
+      state: absent
 
 
 
   - name: start nginx
     ansible.builtin.service:
       name: nginx
-      state: started 
+      state: started
       enabled: yes
 
 
-- name: install python3
-  hosts: frontend
-  become: yes
-  tasks:
-  - name: install python3 and run
-    ansible.builtin.package:
-      name: python3
-      state: present
+# - name: install python3
+#   hosts: frontend
+#   become: yes
+#   tasks:
+#   - name: install python3 and run
+#     ansible.builtin.package:
+#       name: python3
+#       state: present
 
 
   # - name: start python3
