@@ -1,0 +1,7 @@
+- name: giving variables by arguments
+  hosts: local
+  connection: local
+  tasks:
+  - name: By passing arguments
+    ansible.builtin.debug:
+      msg: My name is {{NAME}}, I am software engineer at {{COMPANY}}, and my experienxe is {{YEARS}}
