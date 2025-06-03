@@ -9,10 +9,10 @@
   - name: The number is less than or equal to 100
     ansible.builtin.debug:
       msg: "{{THE_NUMBER}} is less than or equal to 100"
-    when: THE_NUMBER <= 100
+    when: THE_NUMBER | int <= 100
 
   - name: The number is greater than 100
     ansible.builtin.debug:
       msg: " {{THE_NUMBER}} is greater than 100"
-    when: THE_NUMBER > 100
+    when: THE_NUMBER | int > 100
     
