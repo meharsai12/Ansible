@@ -4,5 +4,5 @@
   tasks:
   - name: giving default functions
     ansible.builtin.debug:
-      msg: "Hello {{ person | default('ramesh') }} " #by adding default person ramesh so that in person field the name will be ramesh
-      
+      msg: "Hello ,{{ person | default('ramesh') }} " #by adding default person ramesh so that in person field the name will be ramesh
+      msg: "Hello , {{ number | default('22')}}"
