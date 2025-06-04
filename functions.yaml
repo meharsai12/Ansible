@@ -15,8 +15,23 @@
   
 
   - name: printing persons
-    ansible.builtin.split:
+    ansible.builtin.debug:
       msg: "Hello persons = {{ persons  | split(',') }}"
+ 
+
+  - name: course information
+    vars:
+      course:
+        duration : 10hr
+        trainer: meharsai
+    ansible.builtin.debug:
+      msg: "{{ course | dict2items "
+
+
+
+
+
+    
 
 
   
