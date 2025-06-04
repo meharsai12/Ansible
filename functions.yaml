@@ -24,8 +24,9 @@
       course:
         duration : 10hr
         trainer: meharsai
+        language: java
     ansible.builtin.debug:
-      msg: "{{ course | dict2items }}"
+      msg: COURSE INFO : "{{ course | dict2items }}"
 
 
 
