@@ -40,6 +40,14 @@
       msg: "COURSE DESCRIPTION : {{course | items2dict}}"
 
 
+  - name: Lower to upper
+    vars:
+      NAME:
+        r.meharsai
+    ansible.builtin.debug:
+      msg: "My name is : {{ NAME | upper }}"
+
+
 
 
 
