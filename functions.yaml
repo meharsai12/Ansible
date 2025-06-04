@@ -25,7 +25,7 @@
         duration : 10hr
         trainer: meharsai
     ansible.builtin.debug:
-      msg: "{{ course | dict2items "
+      msg: "{{ course | dict2items }}"
 
 
 
