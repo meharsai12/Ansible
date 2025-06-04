@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    persons: kiran,mehar,suresh,ramesh
+    persons: "kiran,mehar,suresh,ramesh"
   tasks:
   - name: giving default functions
     ansible.builtin.debug:
