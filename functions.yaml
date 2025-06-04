@@ -26,7 +26,7 @@
         trainer: meharsai
         language: java
     ansible.builtin.debug:
-      msg: COURSE INFO : "{{ course | dict2items }}"
+      msg: " COURSE INFO : {{ course | dict2items }}"
 
 
 
