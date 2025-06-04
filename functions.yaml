@@ -29,6 +29,17 @@
       msg: " COURSE INFO : {{ course | dict2items }}"
 
 
+  - name: course desription
+    vars:
+      course:
+       - {'key': 'duration', 'value': '10hr'}
+       - {'key': 'trainer', 'value': 'meharsai'}
+       - {'key': 'language', 'value': 'java'}
+
+    ansible.builtin.debug:
+      msg: "COURSE DESCRIPTION : {{course | items2dict}}"
+
+
 
 
 
