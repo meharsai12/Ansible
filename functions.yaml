@@ -54,6 +54,13 @@
     ansible.builtin.debug:
       msg: "My name is : {{NAME | lower}}"
 
+  - name: Whether the ip address is fake or real
+    vars:
+      IP:
+        192.167.23.1
+    ansible.builtin.debug:
+      msg: "Ip address is :: {{IP | ansible.utils.ipaddr }}"
+
 
 
 
