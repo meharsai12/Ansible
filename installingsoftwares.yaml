@@ -11,7 +11,7 @@
 
   - name: intsall nginx if deian
     ansible.builtin.apt:
-      name: insall nginx
+      name: install nginx
       state: present
     when: ansible_os_family == "Debian"
     
