@@ -1,0 +1,17 @@
+- name: Installing packages
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install nginx if RedHat
+    ansible.builtin.dng:
+      name: install nginx
+      state: present
+    when: ansible_os_family == "RedHat"
+  
+
+  - name: intsall nginx if deian
+    ansible.builtin.apt:
+      name: insall nginx
+      state: present
+    when: ansible_os_family == "Debian"
+    
