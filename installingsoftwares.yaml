@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: install nginx if RedHat
-    ansible.builtin.dng:
+    ansible.builtin.dnf:
       name: install nginx
       state: present
     when: ansible_os_family == "RedHat"
