@@ -1,0 +1,9 @@
+- name: Install nginx
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: installing nginx
+    ansible.builtin.module:
+      name=nginx
+      state=present
+      enabled=yes
