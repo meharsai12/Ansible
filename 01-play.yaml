@@ -1,0 +1,8 @@
+- name: My first yaml file (ping the server)
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: ping the server
+    ansible.builtin.debug:
+    
+  
