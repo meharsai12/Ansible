@@ -1,0 +1,9 @@
+- name: calling variables from outside the script from file
+  hosts: local
+  connection: local
+  vars_files:
+   - course.yaml
+  tasks:
+  - name: calling variables from variables file from outside
+    ansible.builtin.debug:
+      msg: "i am learning {{ LEARNING }} trainer is {{ TRAINER }} and the Duration is {{ TIME }}  through the {{ REFERENCE }}"
