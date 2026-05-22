@@ -13,5 +13,5 @@
   - name: var preferences
     vars:
       GREETING: "Hello from task level"
-    ansible.builtin.debug:
+    ansible.builtin.debug: 
       msg: "{{ GREETING }} "
