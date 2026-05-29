@@ -4,9 +4,10 @@
   tasks:
   - name: installing softwqares
     ansible.builtin.package:
-     name: "{{ item }}""
+     name: "{{ item }}"
      state: present
-  loop:
-  - mysql
-  - nginx
-  - python
+    loop:
+    - mysql
+    - nginx
+    - zip
+    
