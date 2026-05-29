@@ -1,0 +1,13 @@
+- name: printing the names given in loop
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the names
+    ansible.builtin.debug:
+      msg: "Hello {{ item }}"  #c item is the reserve keyword tp print thevalues given or devl;ared in the loop
+
+    loop:
+    - mehar sai
+    - saiteja
+    - thirupathhi
+    - Annapoorna
