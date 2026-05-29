@@ -1,11 +1,11 @@
 - name: loops
-  hosts: local
+  hosts: frontend
   become: yes
   tasks:
   - name: intsalling through loops
     ansbile.builtin.package:
-      name: "{{item.name}}"
-      state: "{{item.state}}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
 
 
 
