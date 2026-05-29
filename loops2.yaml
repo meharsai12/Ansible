@@ -1,0 +1,15 @@
+- name: loops
+  hosts: local
+  become: yes
+  tasks:
+  - name: intsalling through loops
+    ansbile.builtin.package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+
+
+
+    loop:
+    - {name: 'nginx', state: 'present'}
+    - {name: 'python', state: 'present'}
+    - {name: 'ansible', state: 'present'}
